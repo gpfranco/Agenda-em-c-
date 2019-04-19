@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+//lista para o mes
+    struct mes {
+    int num[12];
+    mes* seguinte;
+    dia* dia_do_mes;
+    };
+ //lista para os dias
+    struct dia {
+    int data[30];
+    dia* next;
+    compromisso* compro;
+    };
+ //lista para os compromissos
+    struct compromisso{
+    int hora[24];
+    string descricao;
+    compromisso* proximo;
+    };
+
+
+    void cria_Mes(mes) {
+    mes->num = 1;
+    mes->seguinte =nullptr;
+    mes->dia_do_mes =dia->1;
+    }
+
+    void cria_dia(dia){
+    dia->data = 1;
+    dia->next = nullptr;
+    dia->compro = compromisso->hora;
+    }
+
+    void cria_compromisso(compromisso) {
+    compromisso->descricao= nullptr;
+    compromisso->hora=0;
+    compromisso->proximo = nullptr}
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    return 0;
+}
